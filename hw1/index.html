@@ -12,45 +12,52 @@
     <h3>About Me</h3>
     <table id="t01">
         <tr>
-            <td><img src="images/tim2.jpg" alt="picture of Tim" width="150px" height="200px" </img></td> 
-            <td><p>My name is Tim Frahme</p></td>   
+            <td><img src="images/tim3.jpg" alt="picture of Tim" width="100px" height="100px" </img></td> 
+            <td width="600px"><p>My name is Tim Frahme.  I currently work at Microsoft where I am a Marketing 
+                        Analytics Manager.  I currently handle our paid demand gen initiatives and responsible 
+                        for reporting out results.</p>
+                        <p>I am an avid skier and FC Barcelona fan.  In my free time I enjoy training Brazilian Jiu Jitsu</p>
+            </td> 
+            
         </tr>
        
     </table>
     <h3>Work History</h3>
-    <dl>
-            <dt>2015-Present</dt><dd>Microsoft, Marketing Analytics Manager</dd>
-            <dt>2011-2015</dt><dd>McKesson, Generics Analytics Manager</dd>
-            <dt>2008-2009</dt><dd>Toms Shoes, Online Marketing Manager</dd>
-            <dt>2005-2007</dt><dd>US Peace Corps (Ghana), Small Enterprise Development Volunteer</dd>
-            <dt>2011-2015</dt><dd>PcRush, Analyst</dd>
-    </dl>
-
+     <ul>
+        <dl>
+            <li><dt>2015-Present</dt></li><dd>Microsoft, Marketing Analytics Manager</dd>
+            <li><dt>2011-2015</dt></li><dd>McKesson, Generics Analytics Manager</dd>
+            <li><dt>2008-2009</dt></li><dd>Toms Shoes, Online Marketing Manager</dd>
+            <li><dt>2005-2007</dt></li><dd>US Peace Corps (Ghana), SED Volunteer</dd>
+            <li><dt>2011-2015</dt></li><dd>PcRush, Analyst</dd>
+        </dl>
+    </ul>   
+    <br>
     <h3>Education</h3>
     <ul>
-            <li>MBA - University of Notre Dame</li>
-            <li>BS - Pepperdine University</li>
+            <li>MBA - University of Notre Dame, 2009-2011</li>
+            <li>BS Business Administration - Pepperdine University, 1999-2003</li>
     </ul>
+    <br>
     <h3>Contact Info</h3>
-
+    <ul>
+            <li>Email: tjfrahme@gmail.com</li>
+            <li>Phone: (323) 642-1115</li>
+    </ul>
+    <br>
     <h3>Contact Me</h3>
+    <p>For inquires please provide your name and contact info below</p>
+    <div>
+            <form action="http://localhost/echo.php" method="get">
+                <table>
+                    <tr><td>Name:		<input type="text"  name="name-field"> </td></tr>
+                    <tr><td>Contact Info:		<input type="text"  name="contact-field"></td></tr>
+                </table>
+                <input type="submit"></input>
+            </form>
+    </div>
 
 </body>
 
 
 </html>
-
-<!--
-2.  On your local web site, create an index.html page that holds your resume.
-It must contain a picture of yourself, your contact info (which can be
-fictional if you like), and your work and education history, and an
-"About me" summary paragraph at the top.
-
-It should look as good as it can, given what we know, using both HTML
-layout and semantic elements appropriately.
-
-3.  Add a contact-me form at the bottom of the page, where
-a potential client can send you their name and contact information.
-The form should submit to echo.php so you can see
-what information is received by the server.
--->
