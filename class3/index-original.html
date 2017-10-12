@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+        <!-- created a class and defined it,,  "." is a class ", style - id - class -->
+    <style>
+    .div1 {
+        color: red;
+    }
+    .div2 {color: green;
+    }
+
+    .div1, .div2 {width: 3in;
+    border: 1px solid red}
+
+    .horizontal-rule{
+        border-top: 1px solid gray;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .half-inch-strut {
+        background-color: yellow;
+        height: .5in;
+        width: 1in;
+        border: 1px dotted green;
+        margin: 1px 2px 3px 4px;
+        padding-top: 10;
+        padding-left: 11;
+        padding-right: 12px;
+        padding-bottom: 13px;
+    }
+    .yellow-background{
+        background-color: yellow;
+    }
+    .container{
+        border: 4px dashed blue;
+    }
+    .red{
+        color: red;
+    }
+    .container .half-inch-strut {
+            background-color: white;
+    }
+
+    #name-row {
+        background-color: gray;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+    <h1>test</h1>
+
+    <!-- div create line breaks 
+         <br>
+                <label for="myData">Pick an animal</label>
+                <datalist id="myData>
+                    <option label="Dog" value="dog"></option>
+                    <option label="Cat" value="cat"></option>
+                </datalist>
+    -->
+
+    <div class="horizontal-rule"></div>
+
+    <div class="div1">Div1</div>
+    <div class="div2">Div2</div>
+
+    <div style="border: 1px solid red; margin: .1in .1in .1in .1in;" >
+            <form action="http://localhost/echo.php" method="post">
+                <label for="date-element">Choose the Date</label>                
+                <input type="date" id="date-element"></input>
+
+                <br>
+                <label for="email">My Email</label>
+                <input id="email" type="email" required></input>
+
+
+                <br>
+                <label for="ri">My Range</label>
+                <input id="ri" type="range" min="1" max="100"></input>
+
+                <br>
+                <select>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+
+           
+
+                  <div class= "half-inch-strut yellow-background red"></div>
+
+
+				<table>
+					<tr id="name-row"><td>Name: 	</td><td><input type="text" name="name-field"></td></tr>
+					<tr><td>Address:</td><td><input type="text" name="address-field"></td></tr>
+				</table>
+				<input type="submit">
+			</form>
+		</div>
+
+
+</body>
+
+</html>
+
