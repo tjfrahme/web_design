@@ -2,58 +2,75 @@
 <html>
 <head>
     <title>About | Tim Frahme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<base href="localhost" target="_blank"/>     
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ek Mukta" >
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet"/>
+    <!-- Font Awesome embed code-->
+    <script src="https://use.fontawesome.com/f4bd8af1d6.js"></script>
+    
         
 </head>
 
 <body>
     <h3>About Me</h3>
-    <table id="t01">
-        <tr>
-            <td><img src="images/tim3.jpg" alt="picture of Tim" width="100px" height="100px" </img></td> 
-            <td width="600px"><p>My name is Tim Frahme.  I currently work at Microsoft where I am a Marketing 
-                        Analytics Manager.  I currently handle our paid demand gen initiatives and responsible 
-                        for reporting out results.</p>
-                        <p>I am an avid skier and FC Barcelona fan.  In my free time I enjoy training Brazilian Jiu Jitsu</p>
-            </td> 
+    <div id="profile">
+            <img src="images/tim3.jpg" alt="picture of Tim" width="100px" height="100px" </img>     
+    </div>       
+    <p>My name is Tim Frahme.  I currently work at Microsoft where I am a Marketing 
+        Analytics Manager.  I currently handle our paid demand gen initiatives and responsible 
+        for reporting out results. I am an avid skier and FC Barcelona fan.
+        In my free time I enjoy training Brazilian Jiu Jitsu
+    </p>
+    
             
-        </tr>
-       
-    </table>
+    <br>
     <h3>Work History</h3>
-     <ul>
-        <dl>
-            <li><dt>2015-Present</dt></li><dd>Microsoft, Marketing Analytics Manager</dd>
-            <li><dt>2011-2015</dt></li><dd>McKesson, Generics Analytics Manager</dd>
-            <li><dt>2008-2009</dt></li><dd>Toms Shoes, Online Marketing Manager</dd>
-            <li><dt>2005-2007</dt></li><dd>US Peace Corps (Ghana), SED Volunteer</dd>
-            <li><dt>2011-2015</dt></li><dd>PcRush, Analyst</dd>
-        </dl>
-    </ul>   
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        2015-Present - Microsoft, Marketing Analytics Manager
+    </div>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        2011-2015 - McKesson, Generics Analytics Manager
+    </div>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        2008-2009 - Toms Shoes, Online Marketing Manager
+    </div>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        2005-2007 - US Peace Corps (Ghana), SED Volunteer
+    </div>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        2011-2015 - PcRush, Analyst
+    </div> 
     <br>
     <h3>Education</h3>
-    <ul>
-            <li>MBA - University of Notre Dame, 2009-2011</li>
-            <li>BS Business Administration - Pepperdine University, 1999-2003</li>
-    </ul>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        MBA - University of Notre Dame, 2009-2011
+    </div>
+
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        BS Business Administration - Pepperdine University, 1999-2003
+    </div>
     <br>
     <h3>Contact Info</h3>
-    <ul>
-            <li>Email: tjfrahme@gmail.com</li>
-            <li>Phone: (323) 642-1115</li>
-    </ul>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        Email: tjfrahme@gmail.com
+    </div>
+    <div class="bullet"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        Phone: (323) 642-1115
+    </div>
+
     <br>
     <h3>Contact Me</h3>
     <p>For inquires please provide your name and contact info below</p>
     <div>
             <form action="http://localhost/echo.php" method="get">
-                <table>
-                    <tr><td>Name:		<input type="text"  name="name-field"> </td></tr>
-                    <tr><td>Contact Info:		<input type="text"  name="contact-field"></td></tr>
-                </table>
+        
+                    Name:		<input type="text"  name="name-field"> 
+                    <br>
+                    Contact Info:		<input type="text"  name="contact-field">
+                    <br>
+            
                 <input type="submit"></input>
             </form>
     </div>
