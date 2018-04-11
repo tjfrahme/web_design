@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Cool Homepage</title>
+
+	<!--base element - tells the default domain/url-->
+	<base href="localhost" target="_blank" />    
+
+	<!-- CSS stylesheet, if conflicts between css file and inpage, 
+		it's whatever is read last -->
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+
+	<!-- shortcut icon is the favorite icon-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+	<!-- this is specifiying a specific character set -->	
+	<meta charset="UTF-8"/>
+
+	<meta name="description" content="my in-class sample file"/>
+	<meta name="keyword" content="demo, sample"/>
+	<meta author="tim"/>
+
+	<!-- sets zoom to size of browser-->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"/>
+
+	<!-- this is changing the spacing for p tags to 0 -->	
+	<style>
+		p {margin-top: 0pt; margin-bottom: 0pt}
+	</style>
+
+</head>
+<body>
+	<h1 id="top">Hello </h1>
+	<h2>World!</h2>
+
+	<p>Here is a paragraph I am writing</p>
+	<p>This is another</p>
+	<br>
+	<p>third <b>bold</b> paragraph <i>italics</i>  line break above</p>
+	<hr>
+	<q>a short quotation</q>
+	<br>
+	<code>Here is code</code>
+	<p>this is another paragraph</p>
+	<br>
+
+	<!-- image file, alt is resizing image file -->
+	<img src="http://holub.com/image/HolubLogo-190x190.jpg"
+		alt="Holub.com" width="100px" height="100" </img>
+	<p>
+	
+	<!-- linking -->
+	<a href="http://holub.com" target="_blank"> My Website</a>
+	
+	
+	<a href="#top">Go to Top</a>
+
+	<!-- a list of thing -->
+	<dl>
+		<dt>Term 1</dt><dd>Definition1</dd>
+		<dt>Term 2</dt><dd>Definition2</dd>
+		<dt>Term 3</dt><dd>Definition3</dd>
+	</dl>
+
+	<ol>
+		<li>Element1</li>
+		<li>Element2</li>
+		<li>Element3</li>
+	</ol>
+
+	<ul>
+			<li>Element1</li>
+				<ol>
+					<li>item1</li>
+					<li>item2</li>
+				</ol>
+				
+			<li>Element2</li>
+			<li>Element3</li>
+	</ul>
+
+	<blockquote>
+		Very long quotes go here.  This is an example
+		Very long quotes go here.  This is an example
+		Very long quotes go here.  This is an example
+		Very long quotes go here.  This is an example
+	</blockquote>
+
+	<!-- div elements are creating regions, span is inside a block element.  
+		Can create classes and assign formatting -->
+		<style>
+		.inner { margin-left: 1in; padding-left: .1in; color: blue}
+		.mySpan {color: green}
+		</style>
+		<div>
+			Text1
+			<div class="inner">
+				Text2
+			</div>
+			Text text <span class="mySpan">inside span</span> Text Text
+		</div>
+
+	<br>
+
+	<!-- Tables not great for mobile form factors -->
+	<table border="1">
+		<thead>
+			<td>Left header</td><td>Right Header</td>
+		</thead>
+		<tfoot>
+			<td>Left footer</td><td>Right Footer</td>
+		</tfoot>
+		<tr><td style="border":1px solid red>left</td><td>right</td></tr>	
+		<tr><td>left</td><td>right</td></tr>
+		<tr><td colspan"2">left</tr> 
+	</table>
+
+	<!-- entitiy is a way to display a reserved character or things like Yen, euro-->
+	Fred&nbsp:Flinstone
+	&lt;div&gt;
+
+	<!-- will need to download echo file from Allen's repo and paste into index folder
+	get, put, post-->
+	<div style="border: 1px solid red; margin: .1in .1in .1in .1in;">
+		<form action="http://localhost/echo.php" method="get">
+			<table>
+				<tr> Name:		<input type="text"  name="name-field"> </tr>
+				<tr> Address		<input type="text"  name="address-field"></tr>
+			</table>
+			<input type="submit"></input>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="cart"></p>
+
+<script>
+var txt = "";
+var cart = [
+{   
+    desc:"Apple", 
+    cost:2.50, 
+    qty:2
+},
+{
+    desc:"Pear", 
+    cost:3.10, 
+    qty:1
+}
+];
+
+for (i=0; i < cart.length; i++){
+    document.write("Description: " + cart[i].desc + ",  Cost: " + cart[i].cost + 
+    ",  Quantity :" + cart[i].qty + "<br/><br/>")
+    
+}
+
+
+var total = 0;
+
+for (i=0; i < cart.length; i++){
+    total = total + (cart[i].cost * cart[i].qty)
+}
+
+document.write("Total: " + total)
+
+</script>
+
+</body>
+</html>
+

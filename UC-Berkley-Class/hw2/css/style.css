@@ -1,0 +1,31 @@
+body {background: #F3EFCF;  font-family: 'Mukta', sans-serif;}
+
+h3 {font-weight: bold;}
+
+#profile {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+/*0 px margin on the top and right side, 15 px margin on the bottom, and 20 px margin on the left side */
+
+.bullet{
+    padding-left: 20px;
+    
+}
+
+@media screen and (min-width: 300px) {
+    #profile{
+        float: right;
+        margin: 0px 0px 15px 20px;
+        
+    }
+    
+}
+
+table#t01,td {border-spacing: 3px; vertical-align: top;}
+
+
+/* This is a single-line comment  */
+
