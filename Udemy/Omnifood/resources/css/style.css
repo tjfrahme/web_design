@@ -7,7 +7,7 @@
 html {
     background-color: #fff;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Lato', 'Arial', sans-serif;   /* if can't access google fonts */
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility
@@ -20,9 +20,9 @@ html {
 
 header {
     background-image: linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;
+    background-size: cover;     /* this changes background size */
     background-position: center;
-    height: 100vh;
+    height: 100vh;  /* makes image 100% of viewport*/
 }
 
 .hero-text-box {
@@ -37,29 +37,50 @@ header {
 h1 {
     margin: 0;   /* this is because using normalize, fixes bug */
     color: #fff;
-    font-size: 240%;  /*this increase 200% of normal font */
+    font-size: 240%;  /*this increase 200% of normal font, set in html css tag */
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
 }
 
-.btn:link {                 /*link in it's normal state */
+.btn:link,
+.btn:visited {                 /*link in it's normal state... also pseudoclasses*/
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
-    text-decoration: none;
+    text-decoration: none;    /* gets rid of underline*/
     border-radius: 200px;    /*makes button round, sortof */
+    transition: background-color 0.2s, border 0.2s, color 0.2s;  /*creates transtion when you hover over button*/
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;  
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;  
     
 }
 
-.btn-full {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
     color: #fff;
-}
-
-.btn-ghost {
-    border: 1px solid #e67e22;
-    color: #e67e22;
 }
