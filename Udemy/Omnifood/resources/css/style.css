@@ -1,3 +1,7 @@
+/*--------------------------------------*/
+/*Basic Setup */
+/*--------------------------------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,26 +17,16 @@ html {
     text-rendering: optimizeLegibility
 }
 
+/*--------------------------------------*/
+/*Reusable Components */
+/*--------------------------------------*/
+
 .row {
     max-width: 1140px;
     margin: 0 auto 0 auto;
 }
 
-header {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;     /* this changes background size */
-    background-position: center;
-    height: 100vh;  /* makes image 100% of viewport*/
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   /* is a trick to center */
-}
-
+/*  -----  Headings ------*/
 
 h1 {
     margin: 0;   /* this is because using normalize, fixes bug */
@@ -44,6 +38,9 @@ h1 {
     word-spacing: 4px;
 }
 
+
+
+/*  -----  Buttons ------*/
 .btn:link,
 .btn:visited {                 /*link in it's normal state... also pseudoclasses*/
     display: inline-block;
@@ -83,4 +80,57 @@ h1 {
 .btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
+}
+
+/*--------------------------------------*/
+/*Header */
+/*--------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7),rgb(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;     /* this changes background size */
+    background-position: center;
+    height: 100vh;  /* makes image 100% of viewport*/
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /* is a trick to center */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;   /*removes underlink*/
+    text-transform: uppercase;
+    font-size: 90%;  /* changes font from base 20px to 18 */
+    border-bottom: 2px solid transparent;  /* will not be visible until hover */
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
 }
