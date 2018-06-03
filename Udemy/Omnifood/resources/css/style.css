@@ -27,20 +27,76 @@ html {
 }
 
 section {
+   padding: 80px 0px;
+}
 
+.box {
+    padding: 1%;
 }
 /*  -----  Headings ------*/
 
-h1 {
-    margin: 0;   /* this is because using normalize, fixes bug */
-    color: #fff;
-    font-size: 240%;  /*this increase 200% of normal font, set in html css tag */
+h1,
+h2,
+h3 {
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+    
 }
 
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;  /*this increase 200% of normal font, set in html css tag */
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";   /* when using an after class must specify content */
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*  -----  Paragraphs ------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;   /* 70% + 15% centers it */
+
+}
+
+.box p {        /* selecting box class and then paragraph elements from within */
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*  -----  Icons ------*/
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
 
 
 /*  -----  Buttons ------*/
@@ -136,4 +192,29 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+/*--------------------------------------*/
+/* Meals*/
+/*--------------------------------------*/
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left; 
+    width: 25%;      /* since 4 elements choose 25%  */
+}
+
+.meal-photo {
+    width: 100%;   /* means it has same width as it contianer parent */
+    margin: 0;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
 }
