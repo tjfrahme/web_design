@@ -14,7 +14,7 @@ html {
     font-family: 'Lato', 'Arial', sans-serif;   /* if can't access google fonts */
     font-weight: 300;
     font-size: 20px;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
 }
 
 .clearfix {zoom: 1}     /* fixes floats */
@@ -489,4 +489,4 @@ input[type=checkbox] {
 
 }
 
-*: focus {outline:none}
+*:focus {outline:none}
