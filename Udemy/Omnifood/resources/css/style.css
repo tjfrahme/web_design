@@ -271,7 +271,8 @@ header {
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #efefef
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;   /* defines vertical stacking of elements - this makes the nav always on top*/
 }
 
 .sticky .main-nav { margin-top: 18px; }
@@ -632,6 +633,23 @@ footer p {
 }
 
 
+/*--------------------------------------*/
+/* Animations */
+/*--------------------------------------*/
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;   /* this makes it virtually invisible, waiting for jquery call */
+    animation-duration: 1s;
+}
 
+.js--wp-4 {
+    animation-duration: 1s;
+}
 
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
