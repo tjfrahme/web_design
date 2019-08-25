@@ -170,7 +170,7 @@ nav {
 /*Hero Section */
 /*--------------------------------------*/
 
-.main-hero {
+.section-main-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img-css/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -185,6 +185,16 @@ nav {
     transform: translate(-50%, -50%);
     
 }
+
+
+/*--------------------------------------*/
+/*Testing Section */
+/*--------------------------------------*/
+
+.section-testing2 {
+    background-color: #f4f4f4;
+}
+
 
 
 /*--------------------------------------*/
