@@ -24,6 +24,11 @@ h3 {
     color: #11999E;
 }
 
+hr {
+    border-top: 3px dotted #66BFBF;
+    width: 5%;
+    margin-top: 30px;
+}
 
 .top-container {
     background-color: #E4F9F5;
@@ -36,7 +41,23 @@ h3 {
 }
 
 .bottom-container {
+    margin-top: 75px;
+    background-color: #66BFBF;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: white;
+}
 
+.bottom-container, a{
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.profile-pic{
+    margin-top: 15px;
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .skill-row {
@@ -49,6 +70,8 @@ h3 {
 .pro {
     text-decoration: underline; 
 }
+
+
 
 .top-cloud {
     position: absolute;
@@ -72,6 +95,16 @@ h3 {
     width: 25%;
     float: right;
     margin-left: 30px;
+}
+
+.btn {
+    background-color: #66BFBF;
+    padding: 15px 32px;
+    display:inline-block;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+
 }
 
  /* clear removes the wrap 
