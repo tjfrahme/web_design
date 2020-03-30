@@ -1,3 +1,28 @@
+body {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: #fff;
+}
+
+
+
 .hero-section {
-    background-color: red;
+}
+
+
+
+.title-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0,0.45)), url("../img/main.jpeg") ;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.titlearea {
+    height: .5;
 }
