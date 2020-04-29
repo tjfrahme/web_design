@@ -16,7 +16,8 @@ h1 {
 }
 
 
-.hero-section {
+.navbar {
+    margin: 0% 6%;
 }
 
 
@@ -50,4 +51,10 @@ h1 {
 
 .services-column {
     padding: 4% 2%;
+}
+
+/* Testimonials */
+.Testimonials {
+    background-color: #dfdddda9;
+    padding: 3% 7%;
 }
