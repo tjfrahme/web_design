@@ -60,7 +60,12 @@ h1 {
 }
 
 .testimonial-image {
-    width: 10%;
+    width: 20%;
     border-radius: 100%;
-    margin: 30px;
+    margin: 5px 0px 50px 0px;
+    
+}
+
+.carousel {
+    margin-top: 20px;
 }
