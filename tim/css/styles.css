@@ -16,11 +16,12 @@ h1 {
 }
 
 
+
+/*---- Hero Section ----*/
+
 .navbar {
     margin: 0% 6%;
 }
-
-
 
 .title-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0,0.45)), url("../img/main.jpeg") ;
@@ -44,7 +45,7 @@ h1 {
 }
 
 
-
+/*---- Services ----*/
 .Services {
     padding: 3% 7%;
 }
@@ -53,7 +54,7 @@ h1 {
     padding: 4% 2%;
 }
 
-/* Testimonials */
+/*----- Testimonials---- */
 .Testimonials {
     background-color: #dfdddda9;
     padding: 3% 7%;
@@ -68,4 +69,10 @@ h1 {
 
 .carousel {
     margin-top: 20px;
+}
+
+
+/*-- Contact-Us --*/
+.contact-us {
+    padding: 3% 7%;
 }
