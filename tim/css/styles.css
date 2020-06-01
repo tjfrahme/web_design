@@ -1,6 +1,7 @@
 
 body {
     text-align: center;
+    overflow-x: hidden; /* removed weird right space padding */
 }
 
 
@@ -23,11 +24,13 @@ h1 {
     margin: 0% 6%;
 }
 
+
 .title-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0,0.45)), url("../img/main.jpeg") ;
     height: 80vh;
     background-size: cover;
     background-position: center;
+    background-color: red;
 }
 
 .titlearea {
@@ -46,6 +49,7 @@ h1 {
 
 
 /*---- Services ----*/
+
 .Services {
     padding: 3% 7%;
 }
@@ -71,8 +75,30 @@ h1 {
     margin-top: 20px;
 }
 
+/*----- Contact Us---- */
 
-/*-- Contact-Us --*/
 .contact-us {
     padding: 3% 7%;
 }
+
+.contact-us-column {
+    padding: 2%;
+}
+
+.form-group {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.submit-form {
+    text-align: left;
+}
+
+/*----- Footer  ---- */
+
+footer {
+    background-color: #dfdddda9;
+    overflow: auto;
+    padding: 3% 7%;
+}
+
