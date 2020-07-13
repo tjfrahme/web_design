@@ -13,12 +13,15 @@ h1 {
 
 
 .container-fluid{
-    padding: 0% 0% 2%;
+    padding: 0% 0% 0%;
 }
 
 
 
 /*---- Hero Section ----*/
+.hero-section {
+    margin: 0%
+}
 
 .navbar {
     margin: 0% 6%;
