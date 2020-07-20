@@ -12,19 +12,13 @@ h1 {
 }
 
 
-.container-fluid{
-    padding: 0% 0% 0%;
-}
-
-
-
 /*---- Hero Section ----*/
 .hero-section {
     margin: 0%
 }
 
 .navbar {
-    margin: 0% 6%;
+    margin: 0% 2%;
 }
 
 
@@ -99,6 +93,7 @@ h1 {
 
 .contact-us-img {
     width: 80%;
+    border-radius: 2%;
 }
 
 /*----- Footer  ---- */
@@ -114,4 +109,14 @@ footer {
 .about-us {
     background-color: #dfdddda9;
     padding: 3% 7%; 
+}
+
+.about-us-column {
+    padding: 2%;
+    text-align: left ;
+}
+
+.tim_portrait_image {
+    width: 80%;
+    border-radius: 2%;
 }
