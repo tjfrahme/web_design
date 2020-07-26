@@ -120,3 +120,20 @@ footer {
     width: 80%;
     border-radius: 2%;
 }
+
+/*--- About Us----- */
+
+.services {
+    background-color: #dfdddda9;
+    padding: 3% 7%; 
+}
+
+.services_column {
+    padding: 2%;
+    text-align: left ;
+}
+
+.services_image {
+    width: 80%;
+    border-radius: 2%;
+}
