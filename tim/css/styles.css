@@ -31,7 +31,7 @@ h1 {
 }
 
 .titlearea {
-    margin: 10% 10%;
+    margin: 10% ; 
     text-align: left;
 
     /* position: absolute;
